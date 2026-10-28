@@ -867,7 +867,7 @@ function beginAdd() {
 function beginAiAdd(value = '') {
   draft = {};
   editingId = null;
-  addMessage('일정을 한 문장으로 입력해 주세요.<br>예: 내일 오후 3시에 팀 회의, 10분 전에 알려 줘.<br><small>입력한 문장은 일정 분석을 위해 OpenAI로 전송됩니다.</small>');
+  addMessage('일정을 한 문장으로 입력해 주세요.<br>예: 내일 오후 3시에 팀 회의, 10분 전에 알려 줘.');
   askInput({
     placeholder: '내일 오후 3시 팀 회의, 10분 전 알림', value,
     validate: text => text.length > 2000 ? '2000자 이내로 입력해 주세요.' : '',
