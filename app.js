@@ -434,7 +434,7 @@ function start() {
 function showMainMenu() {
   choices([
     { label: '＋ 단계별 등록', action: beginAdd, className: 'primary' },
-    { label: '✦ AI로 한 번에 등록', action: beginAiAdd },
+    { label: '✦ 문장으로 등록', action: beginAiAdd },
     { label: '✎ 일정 수정', action: () => showEvents('edit') },
     { label: '− 일정 삭제', action: () => showEvents('delete') }
   ]);
